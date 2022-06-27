@@ -1,0 +1,19 @@
+management:
+  endpoint:
+  endpoints:
+    web:
+      base-path: /application
+---
+spring:
+  config:
+    activate:
+      on-profile: test1
+server:
+  port: 8081
+---
+spring:
+  config:
+    activate:
+      on-profile: test2
+server:
+  port: 8082
